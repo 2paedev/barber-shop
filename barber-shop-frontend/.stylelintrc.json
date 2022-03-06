@@ -1,0 +1,52 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier-scss"],
+  "ignoreFiles": [],
+  "rules": {
+    "comment-empty-line-before": "always",
+    "indentation": [2],
+    "no-descending-specificity": null,
+    "selector-class-pattern": null,
+    "value-keyword-case": [
+      "lower",
+      {
+        "ignoreFunctions": ["t", "var", "mat.define-palette"]
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "use",
+          "function",
+          "if",
+          "else",
+          "each",
+          "include",
+          "mixin",
+          "return",
+          "warn"
+        ]
+      }
+    ],
+    "block-closing-brace-newline-after": [
+      "always",
+      {
+        "ignoreAtRules": ["if", "else"]
+      }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["ng-deep"]
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["blockless-after-same-name-blockless", "first-nested"],
+        "ignore": ["after-comment", "inside-block"],
+        "ignoreAtRules": ["use", "forward", "import", "if", "else"]
+      }
+    ]
+  }
+}

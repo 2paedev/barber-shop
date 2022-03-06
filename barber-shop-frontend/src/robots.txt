@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap:  https://barber-shop-f6dc2.web.app/sitemap.xml
